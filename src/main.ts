@@ -30,8 +30,6 @@ async function bootstrap() {
 
   SwaggerModule.setup('docs', app, documentFactory);
 
-  console.log('Hola mundo, primer cambio');
-
   await app.listen(env.port).then(() => {
     logger.log(`Server is running on port ${env.port}`);
   });
